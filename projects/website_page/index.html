@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-store"></i>
+                <h1>Hardware Store</h1>
+            </div>
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <div class="div-text">
+                <span>Product of the day</span>
+                <h3>Bosch</h3>
+                <h1>Is here!!!</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Quisquam, quod.</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+            <div class="div-img">
+                <img  id="big-img" src="img/bosch_hand.png" alt="">
+            </div>
+            <div class="small-img">
+                <img onclick="myProduct(this.src)" src="img/bosch_hand.png" alt="">
+                <img onclick="myProduct(this.src)" src="img/bosssss-removebg-preview (1).png" alt="">
+                <img onclick="myProduct(this.src)" src="img/handgrinder.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let bigImage = document.getElementById('big-img');
+
+        function myProduct(product){
+            bigImage.src = product
+        }
+    </script>
+</body>
+</html>
